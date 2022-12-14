@@ -112,7 +112,7 @@
   #banner {
     padding-top: 17.0625em;
     padding-bottom: 19.1875em;
-    background: url("../img/pexelstomfiskplant.jpg");
+    background: url("../img/backgrounds/daniel-mccullough--FPFq_trr2Y-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@
   .services .card {
     display: block;
     width: 100%;
-    max-width: 22.3125em;
+    max-width: 20em;
     margin: auto;
     margin-bottom: 3.125em;
   }
@@ -192,15 +192,15 @@
   }
   .services .card {
     margin: 0;
-    max-width: 20.3125em;
+    max-width: 12.5em;
   }
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
   .services {
-    padding: 3.125em 5em;
+    padding: 3.125em 2.5em;
   }
   .services .card {
-    max-width: 22.3125em;
+    max-width: 20em;
   }
 }
