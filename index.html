@@ -5,123 +5,420 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="プラント設計を中心に、建築構造設計・エネルギー法耐震計算などの設計や配管設計・設備設計を包括した統合的な構造設計・解析を行う構造設計事務所です。ＡＵＴＯＰＩＰＥによる配管応力解析（熱解析・耐震解析）や海外基準物件も多く手掛けております。東京都目黒区">
-    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!--Use Website Link-->
+    <link rel="canonical" href="">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/images/social.jpg" />
+
+    <!-- Preloading fonts and css -->
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/critical.css"> <!-- Only above the fold css-->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/project.css">
+    <!--Defer loading the whole page css-->
+    <link rel="stylesheet" href="css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+
+
+
+    <!--If the user has javascript disbaled, load this stylesheet-->
+    <noscript>
+        <link rel="stylesheet" href="css/local.css">
+    </noscript>
+
     <title>株式会社 RISE構造設計 </title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
-        rel="stylesheet" />
+
+
 </head>
 
-
 <body>
-    <div class="container">
-        <!-- nav bar -------------------------------->
-        <div class="navbar">
-            <a href="" class="logo-link">
-                <img src="/img/logo.png" alt="Logo" class="logo">
+    <!--==============================================-->
+    <!--                 Navigation                   -->
+    <!--==============================================-->
+
+    <div id="navigation">
+        <div aria-hidden="true" class="background-color-div">
+            <!--  This will make the navbar menu behind the #navigation -->
+        </div>
+        <div class="container">
+            <a class="logo" aria-label="click to go back to home page" href="/index.html">
+                <!-- light version of the Logo -->
+                <img src="img/logo.png" decoding="async" alt="logo" width="221" height="66">
             </a>
-            <nav class="nav-list">
-                <a href="" class="nav-link">ホーム</a>
-                <a href="" class="nav-link">会社情報</a>
-                <a href="" class="nav-link">プロジェクト</a>
-                <a href="" class="nav-link">ニュース</a>
-                <a href="" class="nav-link">採用情報</a>
-                <a href="" class="nav-link">お問い合わせ</a>
+            <!-- Main Navigation Menu -->
+            <nav id="navbar-menu">
+                <ul>
+                    <li><a href="/index.html" class="active">ホーム</a></li>
+                    <li><a href="#">会社情報</a></li>
+                    <li><a href="#">プロジェクト</a></li>
+                    <li><a href="#">ニュース</a></li>
+                    <li><a href="#">採用情報</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
             </nav>
-            <!-- nav bar -------------------------------->
-
+            <!-- Mobile Nav toggle -->
+            <button class="hamburger-menu">
+                <span aria-hidden="true"></span>
+            </button>
         </div>
-        <!-- temporarily removed hamburger menu -->
-        <div class="right-side-menu">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-            <!-- <span>Close</span> -->
-        </div>
-        <!------------------- Container -------------->
-        <header class="header">
-            <div class="img-wrapper">
-                <img src="img/pexelstomfiskplant4.jpg">
-            </div>
-            <div class="banner">
-                <h1>株式会社 RISE構造設計 </h1>
-                <p>未来を見据える構造設計を。</p>
-                <button>詳しく見る</button>
-            </div>
-        </header>
-        <div class="container2">
-            <h2>業務案内</h2>
-            <div class="wrapper">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="img/one.svg">
-                    </div>
-                    <div class="card-description">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati, eos nostrum
-                            doloremque ad laboriosam ducimus cumque sint mollitia rerum!</p>
-                    </div>
-                </div>
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="img/two.svg">
-                    </div>
-                    <div class="card-description">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati, eos nostrum
-                            doloremque ad laboriosam ducimus cumque sint mollitia rerum!</p>
-                    </div>
-                </div>
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="img/three.svg">
-                    </div>
-                    <div class="card-description">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati, eos nostrum
-                            doloremque ad laboriosam ducimus cumque sint mollitia rerum!</p>
-                    </div>
-                </div>
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="img/four.svg">
-                    </div>
-                    <div class="card-description">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati, eos nostrum
-                            doloremque ad laboriosam ducimus cumque sint mollitia rerum!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <div class="img-invert">
-                        <img src="img/logo.png">
-                    </div>
-                    <div class="footer-contact">
-                        <p>〒153-0063　東京都目黒区目黒1-4-16 目黒Ｇビル９Ｆ</p>
-                        <p>TEL：03-6420-0417　FAX：03-6420-0418</p>
-                    </div>
-                    <div class="social-media">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-right">
-
-                </div>
-            </div>
-        </footer>
     </div>
-    <a href="#" class="scroll-btn">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-    <script src="js/main.js"></script>
+    <main id="main">
+        <!--==============================================-->
+        <!--                 LANDING                      -->
+        <!--==============================================-->
+
+        <section id="banner">
+            <div class="banner-content">
+                <div class="bannerText">
+                    <!-- can also use <br> instead of display:block -->
+                    <h1 id="home-h">株式会社 RISE構造設計 <span style="display: block;"> 未来を見据える構造設計を。</span></h1>
+                    <p>私たちは構造設計を通じて</p>
+                    <p>より高次の専門性と技術力を追求し</p>
+                    <p>社会の安心と安全を支え続けます</p>
+                    <a href="#" class="button-solid" target="_blank" rel="noopener">
+                        詳しく見る
+                    </a>
+                </div>
+            </div>
+            <picture>
+                <img aria-hidden="true" decoding="async" src="img/pexelstomfiskplant.jpg" alt="powerplant" width="275" height="132">
+            </picture>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!--                  Services                    -->
+        <!-- ============================================ -->
+
+        <section id="services" class="services">
+            <!-- Get Icons From flaticon.com -->
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" decoding="async" src="img/bx-arch.svg" alt="arch" width="48" height="48">
+                </picture>
+                <h2>プラント設計</h2>
+                <p>
+                    Tプラント設計では、構成する構造物一つ一つに対し、熱応力や地震力などの様々な外力にも強い設計を行っており、都市機能を維持し、人々の社会生活を支えるための基盤整備を担っています。
+                </p>
+            </div>
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" decoding="async" src="img/bx-arch.svg" alt="arch" width="48" height="48">
+                </picture>
+                <h2>建築構造設計</h2>
+                <p>
+                    適合性判定審査機関による確認申請業務を通じて、一定水準以上の構造設計を実現していく他に、クライアントの要望に応えつつ、より経済的かつ要求性能に見合った耐力の建物の提案を行うなど、時に要望より高次の建築物の実現を追求しています。
+                </p>
+            </div>
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" decoding="async" src="img/bx-arch.svg" alt="arch" width="48" height="48">
+                </picture>
+                <h2>配管設計</h2>
+                <p>
+                    多種多様な流体を循環させるために様々な配慮を要することから、配管設計では包括的な視点で設計を行っていくことが大切になります。
+                </p>
+            </div>
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" decoding="async" src="img/bx-arch.svg" alt="arch" width="48" height="48">
+                </picture>
+                <h2>耐震診断</h2>
+                <p>
+                    耐震診断では、この「新耐震設計基準」以前に設計された建物を現行基準と照らし合わせ、被害を受けやすい形状となっていないか、経年による劣化は問題ないか、大地震時に弱点となりうる個所が無いか等を調査し、建物の耐震性能を算出し補強を行う必要性を綿密に検討し、判断していきます。
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                 Side By Side                 -->
+        <!-- ============================================ -->
+
+        <section id="sbs">
+            <div class="cs-container">
+                <!-- Left Image Section -->
+                <div class="cs-left">
+                    <picture class="cs-picture cs-picture1" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+                        <img loading="lazy" decoding="async" src="img/two.svg" alt="house" width="522"
+                            height="581">
+                    </picture>
+                    <picture class="cs-picture cs-picture2" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="/assets/images/construction.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
+                        <img loading="lazy" decoding="async" src="img/three.svg" alt="house"
+                            width="414" height="400">
+                    </picture>
+                </div>
+                <!-- Right Content Section-->
+                <div class="cs-right">
+                    <span class="cs-topper">About Us</span>
+                    <h2 class="cs-title">About Company Title</h2>
+                    <p class="cs-text">
+                        私たちＲＩＳＥ構造設計は、構造設計・解析に特化した専門家集団です。
+                    </p>
+                    <p class="cs-text">
+                        建築設計・配管解析などの複合的な知見を背景に、これまで、クライアントからの要望に応えるのみならず、状況を見極め、様々な角度からご提案を行うことにより、これまで多くの実績を積み重ねて参りました。
+                    </p>
+                    <p class="cs-text">
+                        私たちが目指しているのは、日本のみならず世界を舞台として、有数の企業が必要とする複合的な難条件に答えを与えられる、信頼性の高い企業です。
+                    </p>
+                    <div class="cs-flex-group">
+                        <p class="cs-flex-p">
+                            社会の要請である建築物における安全性・合理性・耐久性・経済性に対して、より高次の専門性と技術力を追求し、安心・安全な構造設計の実現が社会貢献の一助となることを信じ、自らに厳しい姿勢を持って、私たちはこれからも日々、着実に歩み続けます。最後になりましたが、弊社は皆様と共に発展してまいりました。今後共ご指導ご鞭撻の程宜しくお願い致します。
+                        </p>
+                        <span class="cs-name">代表取締役 野口 英孝</span>
+                        <span class="cs-job">構造設計一級建築士・JSCA建築構造士 構造計算適合性判定員</span>
+                        <img class="cs-quote-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel"
+                            width="136" height="77">
+                    </div>
+                    <a href="/about" class="button-solid">More About Us</a>
+                </div>
+            </div>
+        </section>
+        <!-- ============================================ -->
+        <!--          Extra Content For Ranking           -->
+        <!-- ============================================ -->
+
+        <section id="sidebyside-reverse">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">Extra content, maybe talk about a main service</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis dolor consectetur
+                        dolorem inventore modi tenetur ex odit, amet beatae ad, doloribus tempora quae ab nulla minus
+                        temporibus at veritatis!
+                    </p>
+                    <p>
+                        <strong>A list if you need it:</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="img/check.svg" alt="check mark"
+                                width="20" height="20">
+                            <span>List item about something</span>
+                        </li>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="img/check.svg" alt="check mark"
+                                width="20" height="20">
+                            <span>List item about something</span>
+                        </li>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="img/check.svg" alt="check mark"
+                                width="20" height="20">
+                            <span>List item about something</span>
+                        </li>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="img/check.svg" alt="check mark"
+                                width="20" height="20">
+                            <span>List item about something</span>
+                        </li>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="img/check.svg" alt="check mark"
+                                width="20" height="20">
+                            <span>List item about something</span>
+                        </li>
+                    </ul>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe laborum nam
+                        consequuntur porro inventore odio? Quod autem alias ratione cum reiciendis qui quaerat, sequi
+                        voluptatum voluptatibus, iusto itaque sed ullam. Quis, maiores corrupti. Rerum quo laudantium
+                        vero magnam tempora!
+                    </p>
+                    <a class="button-solid" href="/contact.html">Get Free Quote</a>
+                </div>
+                <picture class="image-box">
+                    <source media="(max-width: 600px)" srcset="/images/cabinets2-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/images/cabinets2.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="img/one.svg" alt="cabinets"
+                        width="400" height="662">
+                </picture>
+            </div>
+        </section>
+        <!-- ============================================ -->
+        <!--                   Gallery                    -->
+        <!-- ============================================ -->
+
+        <section id="gallery">
+            <div class="cs-container">
+                <span class="cs-topper">Our Portfolio</span>
+                <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
+                <div class="cs-image-group">
+                    <div class="cs-row cs-row-1">
+                        <!-- Row 1-->
+                        <picture class="cs-picture cs-picture-1">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port1-m.jpg">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port1.jpg">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port1.jpg" alt="new hallway"
+                                width="420" height="567">
+                        </picture>
+                        <picture class="cs-picture cs-picture-2">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port4-m.jpg">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port4.jpg">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port4.jpg"
+                                alt="new home construction" width="420" height="630">
+                        </picture>
+                        <picture class="cs-picture cs-picture-3">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port7-m.jpg">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port7.jpg">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port7.jpg"
+                                alt="building a new wall" width="420" height="512">
+                        </picture>
+                        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="cs-row cs-row-2">
+                        <picture class="cs-picture cs-picture-1">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port2-m.jpg">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port2.jpg">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port2.jpg" alt="new kitchen"
+                                width="420" height="492">
+                        </picture>
+                        <picture class="cs-picture cs-picture-2">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port5-m.jpg">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port5.jpg">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port5.jpg"
+                                alt="apartment addition" width="420" height="517">
+                        </picture>
+                        <picture class="cs-picture cs-picture-3">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port8-m.jpg">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port8.jpg">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port8.jpg"
+                                alt="kew kitchen cabinets" width="420" height="629">
+                        </picture>
+                        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="cs-row cs-row-3">
+                        <picture class="cs-picture cs-picture-1">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port3-m.jpg">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port3.jpg">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port3.jpg"
+                                alt="new black window structure" width="420" height="625">
+                        </picture>
+                        <picture class="cs-picture cs-picture-2">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port6-m.jpg">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port6.jpg">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port6.jpg"
+                                alt="kitchen rebovation" width="420" height="452">
+                        </picture>
+                        <picture class="cs-picture cs-picture-3">
+                            <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port9-m.jpg">
+                            <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port9.jpg">
+                            <img loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port9.jpg"
+                                alt="bathroom renovation" width="420" height="629">
+                        </picture>
+                        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    </div>
+                </div>
+                <a href="/projects" class="button-solid">View Full Gallery</a>
+            </div>
+        </section>
+    </main>
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="img/logo.png"
+                        alt="logo" width="264" height="78"></a>
+                <p>
+                    未来を見据える構造設計を。
+                </p>
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li>
+                            <h2>情報</h2>
+                        </li>
+                        <li><a href="/index.html" class="active">ホーム</a></li>
+                        <li><a href="#">会社情報</a></li>
+                        <li><a href="#">プロジェクト</a></li>
+                        <li><a href="#">ニュース</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>サービス</h2>
+                        </li>
+                        <li>サービス1</li>
+                        <li>サービス2</li>
+                        <li>サービス3</li>
+                        <li>サービス4</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>お問い合わせ</h2>
+                        </li>
+                        <li><a href="/contact.html">〒153-0063　東京都目黒区目黒<br>1-4-16 目黒Ｇビル９Ｆ</a></li>
+                        <li><a href="tel:03-6420-0417">T: 03-6420-0417</a></li> 
+                        <li><a href="mailto:info@rise-str.com">info@rise-str.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            <span>スペンサーによって設計され、手作業でコーディングされています</span>
+            <a href="" target="_blank" rel="noopener">株式会社 RISE構造設計 </a>
+            <span class="copyright"> Copyright 2022</span>
+        </div>
+    </footer>
+    <script defer src="js/main.js"></script>
+    <script defer>
+        document.addEventListener('scroll', (e) => { 
+            const scroll = document.documentElement.scrollTop;
+            if(scroll >= 100){
+        document.querySelector('body').classList.add('scroll')
+            } else {
+            document.querySelector('body').classList.remove('scroll')
+            }
+        });
+    </script>
+
 </body>
 
 </html>
