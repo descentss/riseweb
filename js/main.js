@@ -4,22 +4,44 @@
 const navbarMenu = document.querySelector("#navigation #navbar-menu");
 const hamburgerMenu = document.querySelector("#navigation .hamburger-menu");
 
-hamburgerMenu.addEventListener('click', function() {
-    navbarMenu.classList.toggle("open");
-    hamburgerMenu.classList.toggle("clicked");
+hamburgerMenu.addEventListener('click', function () {
+  navbarMenu.classList.toggle("open");
+  hamburgerMenu.classList.toggle("clicked");
 });
 
 
-document.querySelector(".scroll-btn").addEventListener("click", () => {
-  document.querySelector("html").style.scrollBehavior = "smooth";
-  setTimeout(() => {
-    document.querySelector("html").style.scrollBehavior = "unset";
-  }, 1000);
+//
+//    Toggle Navigation Light Mode
+//
+
+document.addEventListener('scroll', (e) => {
+  const scroll = document.documentElement.scrollTop;
+  if (scroll >= 100) {
+      document.querySelector('body').classList.add('scroll')
+  } else {
+      document.querySelector('body').classList.remove('scroll')
+  }
 });
 
-// <!--
-// This script adds a class to the body after scrolling 100px
-// and we used these body.scroll styles to create some on scroll 
-// animations with the navbar
-// -->
+//
+//    Toggle Image Animation on scroll
+//
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+      } else {
+          entry.target.classList.remove("show");
+      }
+  })
+})
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((e1) => observer.observe(e1));
+
+
+
+
 
