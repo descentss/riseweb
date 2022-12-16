@@ -8,6 +8,45 @@
     #gallery {
         /* Centers button */
         text-align: center;
+        @media only screen and (min-width: 0em) {
+            body.dark-mode {
+                #sbs-r {
+        
+                    .cs-left {
+                        &:before, &:after {
+                            background: var(--accent);
+                        }
+                    }
+        
+                    .cs-picture2 {
+                        background-color: var(--dark);
+                        /* 6px - 12px */
+                        border: clamp(.375em, 1.5vw, .75em) solid var(--dark);
+                    }
+        
+                    .cs-topper {
+                        color: var(--primaryLight)
+                    }
+        
+                    .cs-title, .cs-text, .cs-h3, .cs-flex-p, .cs-name {
+                        color: var(--bodyTextColorWhite);
+                    }
+        
+                    .cs-flex-group {
+                        background-color: var(--accent);
+                    }
+        
+                    .cs-job {
+                        color: var(--bodyTextColorWhite);
+                        opacity: .8;
+                    }
+        
+                    .cs-quote-icon {
+                        opacity: .2;
+                    }
+                }
+            }
+        }
         padding: var(--sectionPadding);
         position: relative;
         /* Prevents overflow from the image going off screen */
@@ -17,7 +56,6 @@
             max-width: 1322/16em;
             margin: auto;
         }
-
         .cs-image-group {
             /* used rem so it doesn't scale with the font size of on parent */
             font-size:~"min(1.1vw, 1em)";
@@ -49,6 +87,8 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                box-shadow: 0em 16/16em 32/16em rgba(0, 0, 0, 0.2);
+
             }
         }
 

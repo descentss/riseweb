@@ -188,7 +188,7 @@
     height: 100%;
   }
   #navigation .logo .light {
-    display: none;
+    display: block;
   }
   #navigation .logo .dark {
     display: block;

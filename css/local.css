@@ -124,13 +124,21 @@
   }
   #sidebyside .hidden {
     opacity: 0;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
+    -webkit-filter: blur(5px);
     filter: blur(5px);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
   }
   #sidebyside .show {
     opacity: 1;
+    -webkit-filter: blur(0);
     filter: blur(0);
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
     transform: translateX(0%);
   }
 }
@@ -333,35 +341,6 @@
     margin: 0;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #sbs-r .cs-left:before,
-  body.dark-mode #sbs-r .cs-left:after {
-    background: var(--accent);
-  }
-  body.dark-mode #sbs-r .cs-picture2 {
-    background-color: var(--dark);
-    /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-  }
-  body.dark-mode #sbs-r .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #sbs-r .cs-title,
-  body.dark-mode #sbs-r .cs-text,
-  body.dark-mode #sbs-r .cs-h3,
-  body.dark-mode #sbs-r .cs-flex-p,
-  body.dark-mode #sbs-r .cs-name {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #sbs-r .cs-flex-group {
-    background-color: var(--accent);
-  }
-  body.dark-mode #sbs-r .cs-job {
-    color: var(--bodyTextColorWhite);
-    opacity: .8;
-  }
-  body.dark-mode #sbs-r .cs-quote-icon {
-    opacity: .2;
-  }
-}
+/*-- -------------------------- -->
+<---   RISE SDGs                -->
+<--- -------------------------- -*/

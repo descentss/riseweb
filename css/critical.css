@@ -36,15 +36,28 @@
     left: 0;
     height: 100%;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
-    animation-name: scale;
-    animation-duration: 25s;
+    -webkit-animation: scale 25s;
+    animation: scale 25s;
   }
-  @keyframes scale {
+  @-webkit-keyframes scale {
     0% {
+      -webkit-transform: scale(1.3);
       transform: scale(1.3);
     }
     100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes scale {
+    0% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+    100% {
+      -webkit-transform: scale(1);
       transform: scale(1);
     }
   }
@@ -102,6 +115,7 @@
     margin: auto;
     display: inline-block;
     width: auto;
+    color: #fff;
   }
 }
 /* Tablet */
@@ -128,9 +142,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-}
-@keyframes MoveBanner {
-  
 }
 /*-- -------------------------- -->
 <---          Services          -->

@@ -140,10 +140,15 @@
             }
         }
         .hidden {
-            opacity:0;
+            opacity: 0;
+            -webkit-transition: all 1s;
+            -o-transition: all 1s;
             transition: all 1s;
-            filter:blur(5px);
-            transform:translateX(-100%)
+            -webkit-filter: blur(5px);
+                    filter: blur(5px);
+            -webkit-transform: translateX(-100%);
+                -ms-transform: translateX(-100%);
+                    transform: translateX(-100%);
         }
         
         @media(prefers-reduced-motion) {
@@ -154,8 +159,11 @@
         
         .show {
             opacity: 1;
-            filter:blur(0);
-            transform:translateX(0%)
+            -webkit-filter: blur(0);
+                    filter: blur(0);
+            -webkit-transform: translateX(0%);
+                -ms-transform: translateX(0%);
+                    transform: translateX(0%);
         
         }
     }
@@ -386,43 +394,8 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-    body.dark-mode {
-        #sbs-r {
+/*-- -------------------------- -->
+<---   RISE SDGs                -->
+<--- -------------------------- -*/
 
-            .cs-left {
-                &:before, &:after {
-                    background: var(--accent);
-                }
-            }
 
-            .cs-picture2 {
-                background-color: var(--dark);
-                /* 6px - 12px */
-                border: clamp(.375em, 1.5vw, .75em) solid var(--dark);
-            }
-
-            .cs-topper {
-                color: var(--primaryLight)
-            }
-
-            .cs-title, .cs-text, .cs-h3, .cs-flex-p, .cs-name {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-flex-group {
-                background-color: var(--accent);
-            }
-
-            .cs-job {
-                color: var(--bodyTextColorWhite);
-                opacity: .8;
-            }
-
-            .cs-quote-icon {
-                opacity: .2;
-            }
-        }
-    }
-}
