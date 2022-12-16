@@ -359,10 +359,7 @@
     height: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-  body.scroll #navigation .logo .light {
-    display: none;
-  }
-  body.scroll #navigation .logo .dark {
+  body.scroll #navigation .logo {
     display: block;
   }
   body.scroll #navigation #navbar-menu ul li a {
