@@ -58,7 +58,7 @@
         padding: 0;
         font-size: 100%;
         font-family: 'Roboto', Arial, sans-serif;
-        color: var(--bodyTextColor);
+        color: #4E4B66;
         overflow-x: hidden;
     }
 
@@ -80,7 +80,7 @@
 
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
-        color: var(--headerColor);
+        color: #1a1a1a;
     }
     
     p, li, a {
@@ -113,7 +113,7 @@
         padding: 0 30/16rem;
         position: relative;
         z-index: 1;
-        background-color: var(--primary);
+        background-color: #0064b1;
 
         // Transition Properties
         color: #000;
@@ -370,7 +370,7 @@
                                 position: absolute;
                                 display: block;
                                 height: 8/16rem;
-                                background: var(--primary);
+                                background: #0064b1;
                                 opacity: 1;
                                 bottom: 5/1rem;
                                 border-radius: 4/16rem;
@@ -420,7 +420,7 @@
 
     ::-webkit-scrollbar-thumb {
         border-radius: 10/16em;
-        background: var(--primary);
+        background: #0064b1;
     }
 
     // On Scroll Transitions
@@ -547,7 +547,7 @@
                             display: block;
                             height: 6/16rem;
                             border-radius: 3/16rem;
-                            background: var(--primary);
+                            background: #0064b1;
                             opacity: 1;
                             bottom: 2/16rem;
                             z-index: -1;
@@ -572,7 +572,7 @@
                                 display: block;
                                 width: 100%;
                                 height: 6/16rem;
-                                background: var(--primary);
+                                background: #0064b1;
                                 opacity: 1;
                                 bottom: 2/16rem;
                                 border-radius: 3/16rem;
@@ -596,101 +596,6 @@
     }
 }
 
-// ---------------------------------------------------------
-
-/* Dark Mode Mobile */
-@media only screen and (max-width: 1023px) {
-    body.dark-mode {
-        #navigation {
-            .background-color-div {
-                background-color: var(--dark);
-            }
-
-            .hamburger-menu {
-                &.clicked {
-                    span {
-                        background-color: var(--dark);
-                    }
-                }
-                span {
-                    background-color: #fff;
-
-                    &:before, &:after {
-                        background-color: #fff;
-                    }
-                }
-            }
-
-            .logo {
-                .light {
-                    display: block;
-                }
-
-                .dark {
-                    display: none !important;
-                }
-            }
-
-            #navbar-menu {
-                background-color: var(--medium);
-
-                ul {
-                    li {
-                        a {
-                            color: #fff;
-                            &:before {
-                                background: var(--accent);
-                            }
-
-                            &.active {
-                                color: var(--primary);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/* Dark Mode Desktop */
-@media only screen and (min-width: 1024px) {
-    body.dark-mode {
-        #navigation {
-            .background-color-div {
-                background-color: var(--dark);
-            }
-
-            .logo {
-                .light {
-                    display: block;
-                }
-
-                .dark {
-                    display: none !important;
-                }
-            }
-
-            #navbar-menu {
-                ul {
-                    li {
-                        a {
-                            color: #fff;
-                            &:before {
-                                background: var(--accent);
-                            }
-
-                            &.active {
-                                color: var(--primary);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
-}
 
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
@@ -876,7 +781,7 @@
                             line-height: 21/18em;
 							transition: color .3s;
 							&:hover {
-								color: var(--primary);
+								color: #0064b1;
 							}
                         }
                     }
@@ -895,7 +800,7 @@
 							display: block;
 							height: 2/16rem;
 							width: 97/16rem;
-							background: var(--primary);
+							background: #0064b1;
 							opacity: 1;
 							bottom: -16/16rem;
 							left: 0;
@@ -927,7 +832,7 @@
 			font-size: 16/16rem;
 
 			a {
-				color: var(--primary);
+				color: #0064b1;
 				text-decoration: none;
 				font-size: 16/16rem;
 
@@ -1007,7 +912,7 @@
                                 display: block;
                                 height: 2/16rem;
                                 width: 0%;
-                                background: var(--primary);
+                                background: #0064b1;
                                 opacity: 1;
                                 bottom: -3/16rem;
                                 left: 0;

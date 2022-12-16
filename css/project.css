@@ -26,18 +26,17 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 1.875em;
   }
   #gallery .cs-row {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 1.875em;
   }
   #gallery .cs-picture {
     position: relative;
     display: block;
+    margin: 1.875em;
   }
   #gallery .cs-picture img {
     position: absolute;

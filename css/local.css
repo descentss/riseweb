@@ -94,7 +94,7 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: var(--primary);
+    background: #0064b1;
     opacity: 1;
     top: 2.5em;
     left: -2.5em;
@@ -166,7 +166,7 @@
   }
   #sidebyside .content {
     margin: 0;
-    width: 60%;
+    width: 50%;
   }
   #sidebyside .image-box {
     margin: 0;
@@ -253,7 +253,7 @@
     text-align: left;
     letter-spacing: .1em;
     font-weight: 700;
-    color: var(--primary);
+    color: #0064b1;
     margin-bottom: 0.25rem;
     display: block;
   }
@@ -275,7 +275,7 @@
     max-width: 46.875rem;
     margin: 0 auto;
     margin-bottom: 1rem;
-    color: var(--bodyTextColor);
+    color: #1a1a1a;
   }
   #sbs-r .cs-text:last-of-type {
     margin-bottom: 2rem;
