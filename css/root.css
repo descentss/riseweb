@@ -470,7 +470,7 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #int-hero {
+  #int-banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -480,7 +480,7 @@
     min-height: 30vh;
     padding-top: 3.125rem;
   }
-  #int-hero:before {
+  #int-banner:before {
     content: '';
     position: absolute;
     display: block;
@@ -492,7 +492,7 @@
     left: 0;
     z-index: -1;
   }
-  #int-hero picture {
+  #int-banner picture {
     position: absolute;
     top: 0;
     left: 0;
@@ -500,7 +500,7 @@
     width: 100%;
     z-index: -2;
   }
-  #int-hero picture img {
+  #int-banner picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -508,7 +508,7 @@
     width: 100%;
     object-fit: cover;
   }
-  #int-hero h1 {
+  #int-banner h1 {
     color: #fff;
     font-size: 2.13333333rem;
     text-align: center;
@@ -519,7 +519,7 @@
     margin-top: 4.375rem;
     margin-bottom: 1.875rem;
   }
-  #int-hero p {
+  #int-banner p {
     color: #fff;
     text-align: center;
     max-width: 25rem;
@@ -531,16 +531,16 @@
 }
 /* Tablet */
 @media only screen and (min-width: 48em) {
-  #int-hero {
+  #int-banner {
     font-size: 100%;
   }
-  #int-hero h1 {
+  #int-banner h1 {
     font-size: 4rem;
   }
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-  #int-hero {
+  #int-banner {
     min-height: 18.75rem;
     height: auto;
     padding-top: 11.25rem;
