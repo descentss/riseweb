@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "intersection-observer": "^0.12.2"
+    "intersection-observer": "^0.12.2",
+    "webpack": "^5.75.0"
   }
 }

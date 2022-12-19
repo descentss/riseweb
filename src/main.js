@@ -1,4 +1,3 @@
-import "../node_modules/intersection-observer/intersection-observer.js"
 //    Toggle Mobile Navigation
 //
 const navbarMenu = document.querySelector("#navigation #navbar-menu");
