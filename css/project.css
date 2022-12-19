@@ -46,6 +46,7 @@
     width: 100%;
     object-fit: cover;
     box-shadow: 0em 1em 2em rgba(0, 0, 0, 0.2);
+    border-radius: 0.3125em;
   }
   #gallery .cs-row-1 .cs-picture-1 {
     width: 26.25em;
@@ -84,7 +85,6 @@
     height: 39.3125em;
   }
 }
-
 @media only screen and (min-width: 0em) and only screen and (min-width: 0em) {
   #gallery body.dark-mode #sbs-r .cs-left:before,
   #gallery body.dark-mode #sbs-r .cs-left:after {
