@@ -105,7 +105,7 @@
     display: block;
     height: 32.25em;
     width: 28.75em;
-    background: url("/images/content-circles.svg");
+    background: url("/img/content-circles.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,6 +121,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 0.3125em;
   }
   #sidebyside .hidden {
     opacity: 0;
@@ -161,7 +162,6 @@
   #sidebyside .container {
     max-width: 86.9375em;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
   }
   #sidebyside .content {
@@ -170,7 +170,7 @@
   }
   #sidebyside .image-box {
     margin: 0;
-    margin-right: 10.625em;
+    margin-right: 9.375em;
   }
 }
 /*-- -------------------------- -->
