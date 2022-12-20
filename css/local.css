@@ -16,14 +16,23 @@
     order: 2;
     margin: auto;
     margin-top: 4.6875em;
-    max-width: 33.875em;
+    max-width: 38.1875em;
+  }
+  #sidebyside .content span {
+    color: #0064b1;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: .1em;
+    font-weight: 700;
   }
   #sidebyside .content h2 {
-    font-size: 3em;
-    margin-bottom: 0.875em;
+    font-size: 2em;
+    margin-bottom: 0.5em;
   }
   #sidebyside .content p {
     margin-bottom: 1.11111111em;
+    font-size: 0.8em;
   }
   #sidebyside .content ul {
     padding-left: 1.25em;
@@ -41,14 +50,14 @@
   }
   #sidebyside .content .cs-flex-group {
     /* 16px - 32px */
-    padding: clamp(1rem, 3vw, 2rem);
+    padding: 1.5rem;
     background-color: #F7F7F7;
     border-radius: 1rem;
     position: relative;
   }
   #sidebyside .content .cs-flex-p {
     /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-size: 1rem;
     line-height: 1.5em;
     margin: 0 0 1rem;
     color: #767676;
@@ -84,8 +93,8 @@
     display: block;
     position: relative;
     margin: auto;
-    width: 38.1875em;
-    height: 53.8125em;
+    width: 25em;
+    height: 43.75em;
     font-size: min(1.4vw, 1em);
   }
   #sidebyside .image-box:before {
@@ -98,6 +107,7 @@
     opacity: 1;
     top: 2.5em;
     left: -2.5em;
+    border-radius: 0.3125em;
   }
   #sidebyside .image-box:after {
     content: '';
@@ -151,7 +161,7 @@
 /* Inbetween */
 @media only screen and (min-width: 666px) {
   #sidebyside {
-    padding: 6.25em 0;
+    padding: 3.125em 0;
   }
 }
 /* Small Desktop */
@@ -166,13 +176,16 @@
   }
   #sidebyside .content {
     margin: 0;
-    width: 50%;
+    width: 60%;
   }
   #sidebyside .image-box {
     margin: 0;
-    margin-right: 9.375em;
+    margin-right: 6.25em;
   }
 }
+/*-- -------------------------- -->
+<---   Projects Carousel        -->
+<--- -------------------------- -*/
 /*-- -------------------------- -->
 <---   Side By Side Reverse     -->
 <--- -------------------------- -*/
@@ -183,13 +196,12 @@
   }
   #sbs-r .cs-container {
     width: 100%;
-    max-width: 80rem;
+    max-width: 81.25rem;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 2.5rem;
   }
   #sbs-r .cs-left {
     /* scaling the font size with the view width */
@@ -212,8 +224,8 @@
     left: 0;
     height: 100%;
     width: 100%;
-    /* makes image act like a background image */
     object-fit: cover;
+    /* makes image act like a background image */
   }
   #sbs-r .cs-picture1 {
     width: 32.625em;
@@ -247,18 +259,19 @@
     max-width: 33.875rem;
   }
   #sbs-r .cs-topper {
-    font-size: var(--topperFontSize);
+    font-size: 1em;
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: left;
     letter-spacing: .1em;
     font-weight: 700;
     color: #0064b1;
+    margin-top: 0.5rem;
     margin-bottom: 0.25rem;
     display: block;
   }
   #sbs-r .cs-title {
-    font-size: var(--headerFontSize);
+    font-size: 2em;
     font-weight: 900;
     line-height: 1.2em;
     text-align: left;
@@ -266,9 +279,10 @@
     margin: 0 auto 1rem;
     color: var(--headerColor);
     position: relative;
+    text-transform: uppercase;
   }
   #sbs-r .cs-text {
-    font-size: var(--bodyFontSize);
+    font-size: 0.75em;
     line-height: 1.5em;
     text-align: left;
     width: 100%;
@@ -329,7 +343,6 @@
   #sbs-r .cs-container {
     flex-flow: row;
     justify-content: space-between;
-    gap: 3.25rem;
   }
   #sbs-r .cs-left {
     font-size: min(1.2vw, 1em);

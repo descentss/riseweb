@@ -18,15 +18,25 @@
             order: 2;
             margin: auto;
             margin-top: 75/16em;
-            max-width: 542/16em;
+            max-width: 611/16em;
+
+            span {
+                color: #0064b1;
+                line-height: 1.2em;
+                text-transform: uppercase;
+                text-align: left;
+                letter-spacing: .1em;
+                font-weight: 700;
+            }
 
             h2 {
-                font-size: 48/16em;
-                margin-bottom: 42/48em;
+                font-size: 32/16em;
+                margin-bottom: 16/32em;
             }
 
             p {
                 margin-bottom: 20/18em;
+                font-size: 12.8/16em;
             }
 
             ul {
@@ -48,7 +58,7 @@
 
             .cs-flex-group {
                 /* 16px - 32px */
-                padding: clamp(1rem, 3vw, 2rem);
+                padding: 1.5rem;
                 background-color: #F7F7F7;
                 border-radius: 16/16rem;
                 position: relative;
@@ -56,7 +66,7 @@
     
             .cs-flex-p {
                 /* 14px - 16px */
-                font-size: clamp(.875rem, 1.5vw, 1rem);
+                font-size: 1rem;
                 line-height: 1.5em;
                 margin: 0 0 16/16rem;
                 color: #767676;
@@ -98,8 +108,8 @@
             display: block;
             position: relative;
             margin: auto;
-            width: 611/16em;
-            height: 861/16em;
+            width: 400/16em;
+            height: 700/16em;
             font-size:~"min(1.4vw, 1em)"; // scales the image-box down
             &:before {
                 content: '';
@@ -111,6 +121,7 @@
                 opacity: 1;
                 top: 40/16em;
                 left: -40/16em;
+                border-radius: 5/16em;
             }
 
             &:after {
@@ -173,7 +184,7 @@
 /* Inbetween */
 @media only screen and (min-width: 666px) {
     #sidebyside {
-        padding: 100/16em 0;
+        padding: 50/16em 0;
     }
 }   
 
@@ -190,15 +201,19 @@
 
         .content {
             margin: 0;
-            width: 50%;
+            width: 60%;
         }
 
         .image-box {
             margin: 0;
-            margin-right: 150/16em;
+            margin-right: 100/16em;
         }
     }
 }
+
+/*-- -------------------------- -->
+<---   Projects Carousel        -->
+<--- -------------------------- -*/
 
 
 
@@ -214,13 +229,13 @@
 
         .cs-container {
             width: 100%;
-            max-width: 1280/16rem;
+            max-width: 1300/16rem;
             margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            row-gap: 40/16rem;
+            // row-gap: 40/16rem;
         }
 
         .cs-left {
@@ -244,8 +259,9 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
-                /* makes image act like a background image */
                 object-fit: cover;
+                /* makes image act like a background image */
+                // object-fit: cover;
             }
         }
 
@@ -292,19 +308,20 @@
         }
 
         .cs-topper {
-            font-size: var(--topperFontSize);
+            font-size: 16/16em;
             line-height: 1.2em;
             text-transform: uppercase;
             text-align: left;
             letter-spacing: .1em;
             font-weight: 700;
             color: #0064b1;
+            margin-top: 8/16rem;
             margin-bottom: 4/16rem;
             display: block;
         }
 
         .cs-title {
-            font-size: var(--headerFontSize);
+            font-size: 32/16em;
             font-weight: 900;
             line-height: 1.2em;
             text-align: left;
@@ -312,10 +329,11 @@
             margin: 0 auto 16/16rem;
             color: var(--headerColor);
             position: relative;
+            text-transform: uppercase;
         }
 
         .cs-text {
-            font-size: var(--bodyFontSize);
+            font-size: 12/16em;
             line-height: 1.5em;
             text-align: left;
             width: 100%;
@@ -379,7 +397,7 @@
         .cs-container {
             flex-flow: row;
             justify-content: space-between;
-            gap: 52/16rem;
+            // gap: 52/16rem;
         }
 
         .cs-left {

@@ -23,7 +23,7 @@
         --sectionPadding: clamp(2em, 7.82vw, 3.5em) 16/16rem;
     }
 
-    // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
+    // Grab your fonts to locally host from https://google-webfonts-helper.bannerkuapp.com/fonts
     
     /* roboto-regular - latin */
     @font-face {
@@ -357,11 +357,14 @@
                         text-decoration: none;
                         text-transform: uppercase;
                         color: #000;
-                        font-size: 19/16rem;
+                        font-size: 16/16rem;
                         text-align: center;
                         display: inline-block;
                         position: relative;
                         font-weight: bold;
+                        span {
+                            font-size: 20/16rem;
+                        }
 
                         // Active State
                         &.active {
@@ -386,9 +389,10 @@
 
         // Navbar Menu Open State
         #navbar-menu.open {
-            height: 356/16rem;
+            height: 450/16rem;
             padding-top: 20/16rem;
             z-index: -100;
+            opacity:0.9;
 
             ul {
                 li {
@@ -500,7 +504,7 @@
         .logo {
             // Margin-right: auto Pushes everything away from the right, nudging it to the left and pushing everyting to the right
             margin-right: auto;
-            height: 60/16rem;
+            height: 45/16rem;
             width: auto;
 
             img {
@@ -519,14 +523,15 @@
 
                 li {
                     list-style: none;
-                    margin-left: 30/16rem;
+                    margin-left: 25/16rem;
                     padding-top: 3/16rem;
+                    text-align: center;
 
                     a {
                         text-decoration: none;
                         font-weight: bold;
                         /* 14px - 18px */
-                        font-size: clamp(.875rem, 1.5vw, 1.125rem);
+                        font-size: 12/16rem;
                         text-transform: uppercase;
                         position: relative;
                         z-index: 1;
@@ -534,6 +539,14 @@
                         // Transiiton Properties
                         color: #fff;
                         transition: color .3s;
+
+                        display:flex;
+                        flex-direction: column;
+
+                        span {
+                            font-size: 12/12rem;
+                        }
+    
 
                         &:before {
                             content: '';
@@ -590,11 +603,6 @@
     }
 }
 
-
-/*-- -------------------------- -->
-<---   Interior Page Header     -->
-<--- -------------------------- -*/
-
 /* Mobile */
 @media only screen and (min-width: 0em) {
 
@@ -606,7 +614,7 @@
         position: relative;
         z-index: 1;
         min-height: 30vh;
-        padding-top: 50/16rem;
+        padding-top: 50/16em;
 
         &:before {
             content: '';
@@ -641,22 +649,22 @@
 
         h1 {
             color: #fff;
-            font-size: 64/30rem;
+            font-size: 64/30em;
             text-align: center;
             margin: 0 auto;
             position: relative;
             width: 96%;
-            max-width: 500/16rem;
-            margin-top: 70/16rem;
-            margin-bottom: 30/16rem;
+            max-width: 500/64em;
+            margin-top: 70/64em;
+            margin-bottom: 30/64em;
         }
 
         p {
             color: #fff;
             text-align: center;
-            max-width: 400/16rem;
+            max-width: 400/18em;
             margin: auto;
-            margin-bottom: 30/16rem;
+            margin-bottom: 30/18em;
             display: block;
             width: 96%;
         }
@@ -668,10 +676,10 @@
 @media only screen and (min-width: 48em) {
 
     #int-banner {
-        font-size: 100%;
+        font-size: 16px;
 
         h1 {
-            font-size: 64/16rem;
+            font-size: 64/16em;
         }
     }
 }
@@ -680,14 +688,15 @@
 @media only screen and (min-width: 64em) {
 
     #int-banner {
-        min-height: 300/16rem;
+        min-height: 300/16em;
         height: auto;
-        padding-top: 180/16rem;
-        padding-block-end: 100/16rem;
+        padding-top: 180/16em;
+        padding-block-end: 100/16em;
         background-attachment: fixed;
         font-size: inherit;
     }
 }
+
 
 /*-- -------------------------- -->
 <---           Footer           -->

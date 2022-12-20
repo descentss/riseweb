@@ -50,17 +50,17 @@
         <div class="container">
             <a class="logo" aria-label="click to go back to home page" href="/index.html">
                 <!-- light version of the Logo -->
-                <img src="img/logo.png" decoding="async" alt="logo" width="221" height="66">
+                <img src="img/logo/riselogo5.png" decoding="async" alt="logo" width="221" height="66">
             </a>
             <!-- Main Navigation Menu -->
             <nav id="navbar-menu">
                 <ul>
-                    <li><a href="/index.html" class="active">ホーム</a></li>
-                    <li><a href="#">会社情報</a></li>
-                    <li><a href="#">プロジェクト</a></li>
-                    <li><a href="#">ニュース</a></li>
-                    <li><a href="#">採用情報</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="/index.html" class="active">ホーム<span style="display: block;">Home</span></a></li>
+                    <li><a href="#">会社情報<span style="display: block;">Company Information</span></a></li>
+                    <li><a href="#">プロジェクト<span style="display: block;">Projects</span></a></li>
+                    <li><a href="#">ニュース<span style="display: block;">News</span></a></li>
+                    <li><a href="#">採用情報<span style="display: block;">Recruit</span></a></li>
+                    <li><a href="#">お問い合わせ<span style="display: block;">Contact</span></a></li>
                 </ul>
             </nav>
             <!-- Mobile Nav toggle -->
@@ -78,10 +78,7 @@
             <div class="banner-content">
                 <div class="bannerText">
                     <!-- can also use <br> instead of display:block -->
-                    <h1 id="home-h"><span style="display: block;"> 未来を見据える構造設計を。</span></h1>
-                    <p>私たちは構造設計を通じて</p>
-                    <p>より高次の専門性と技術力を追求し</p>
-                    <p>社会の安心と安全を支え続けます</p>
+                    <h1 id="home-h">未来を見据える構造設計を<span style="display: block;">Designing One Step Ahead</span></h1>
                     <a href="#" class="button-solid" target="_blank" rel="noopener">
                         詳しく見る
                     </a>
@@ -99,53 +96,59 @@
         <!-- ============================================ -->
 
         <section id="services" class="services">
-            <!-- Get Icons From flaticon.com -->
-            <div class="card">
-                <div id="zoomin">
-                    <picture>
-                        <img aria-hidden="true" decoding="async" src="img/services/plant.jpg" alt="arch" width="48"
-                            height="48">
-                    </picture>
-                </div>
-                <h2>プラント設計</h2>
-                <p>
-                    構成する構造物一つ一つに対し、熱応力や地震力などの様々な外力にも強い設計を行っており、都市機能を維持し、人々の社会生活を支えるための基盤整備を担っています。
-                </p>
+            <div class="headerwrapper">
+                <span class="cs-topper">サービス</span>
+                <h2 class="title">Services</h2>
             </div>
-            <div class="card">
-                <div id="zoomin">
-                    <picture>
-                        <img aria-hidden="true" decoding="async" src="img/services/magpie.jpg" alt="arch" width="48"
-                            height="48">
-                    </picture>
+            <div class="cardwrapper">
+                <div class="card">
+                    <div id="zoomin">
+                        <picture>
+                            <img aria-hidden="true" decoding="async" src="img/services/plant.jpg" alt="arch" width="48"
+                                height="48">
+                        </picture>
+                    </div>
+                    <h2>プラント設計<span style="display: block;">Plant Design</span></h2>
+                    <p>
+                        構成する構造物一つ一つに対し、熱応力や地震力などの様々な外力にも強い設計を行っており、都市機能を維持し、人々の社会生活を支えるための基盤整備を担っています。
+                    </p>
                 </div>
-                <h2>建築構造設計</h2>
-                <p>
-                    クライアントの要望に応えつつ、より経済的かつ要求性能に見合った耐力の建物の提案を行うなど、時に要望より高次の建築物の実現を追求しています。
-                </p>
-            </div>
-            <div class="card">
-                <div id="zoomin">
-                    <picture>
-                        <img aria-hidden="true" decoding="async" src="img/services/piping.jpg" alt="arch" width="48" height="48">
-                    </picture>
+                <div class="card">
+                    <div id="zoomin">
+                        <picture>
+                            <img aria-hidden="true" decoding="async" src="img/services/magpie.jpg" alt="arch" width="48"
+                                height="48">
+                        </picture>
+                    </div>
+                    <h2>建築構造設計<span style="display: block;">Architectural Design</span></h2>
+                    <p>
+                        クライアントの要望に応えつつ、より経済的かつ要求性能に見合った耐力の建物の提案を行うなど、時に要望より高次の建築物の実現を追求しています。
+                    </p>
                 </div>
-                <h2>配管設計</h2>
-                <p>
-                    多種多様な流体を循環させるために様々な配慮を要することから、配管設計では包括的な視点で設計を行っていくことが大切になります。
-                </p>
-            </div>
-            <div class="card">
-                <div id="zoomin">
-                    <picture>
-                        <img aria-hidden="true" decoding="async" src="img/services/seismiceval.jpg" alt="arch" width="48"
-                            height="48">
-                    </picture>
+                <div class="card">
+                    <div id="zoomin">
+                        <picture>
+                            <img aria-hidden="true" decoding="async" src="img/services/piping.jpg" alt="arch" width="48"
+                                height="48">
+                        </picture>
+                    </div>
+                    <h2>配管設計<span style="display: block;">Piping Design</span></h2>
+                    <p>
+                        多種多様な流体を循環させるために様々な配慮を要することから、配管設計では包括的な視点で設計を行っていくことが大切になります。
+                    </p>
                 </div>
-                <h2>耐震診断</h2>
-                <p>
-                    耐震診断では、この「新耐震設計基準」以前に設計された建物を現行基準と照らし合わせ、被害を受けやすい形状となっていないか、経年による劣化は問題ないか、判断していきます。
-                </p>
+                <div class="card">
+                    <div id="zoomin">
+                        <picture>
+                            <img aria-hidden="true" decoding="async" src="img/services/seismiceval.jpg" alt="arch"
+                                width="48" height="48">
+                        </picture>
+                    </div>
+                    <h2>耐震診断<span style="display: block;">Seismic Diagnosis</span></h2>
+                    <p>
+                        耐震診断では、この「新耐震設計基準」以前に設計された建物を現行基準と照らし合わせ、被害を受けやすい形状となっていないか、経年による劣化は問題ないか、判断していきます。
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -156,16 +159,16 @@
         <section id="sidebyside" class="sidebyside">
             <div class="container">
                 <div class="content">
-                    <span class="cs-topper">会社情報</span>
-                    <h2 class="title">株式会社 RISE構造設計</h2>
+                    <span class="cs-topper">企業理念</span>
+                    <h2 class="title">Corporate Philosophy</h2>
                     <p class="cs-text">
-
+                        私たちは構造設計を通じて
                     </p>
                     <p class="cs-text">
-
+                        より高次の専門性と技術力を追求し
                     </p>
                     <p class="cs-text">
-
+                        社会の安心と安全を支え続けます
                     </p>
                     <div class="cs-flex-group">
                         <p class="cs-flex-p">
@@ -178,9 +181,6 @@
                         </p>
                         <span class="cs-name">代表取締役 野口 英孝</span>
                         <span class="cs-job">構造設計一級建築士・JSCA建築構造士 構造計算適合性判定員</span>
-                        <img class="cs-quote-icon" loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel"
-                            width="136" height="77">
                     </div>
                     <a href="/about" class="button-solid">会社情報</a>
                 </div>
@@ -194,7 +194,7 @@
         </section>
 
         <!-- ============================================ -->
-        <!--                   SLIDESHOW                  -->
+        <!--             PROJECTS CAROUSEL                -->
         <!-- ============================================ -->
 
         <div class="slider">
@@ -249,8 +249,8 @@
                 </div>
                 <!-- Right Content Section-->
                 <div class="cs-right">
-                    <span class="cs-topper"></span>
-                    <h2 class="cs-title">採用情報</h2>
+                    <span class="cs-topper">採用情報</span>
+                    <h2 class="cs-title">Recruit</h2>
                     <p class="cs-text">
 
                     </p>
@@ -272,8 +272,8 @@
 
         <section id="gallery">
             <div class="cs-container">
-                <span class="cs-topper"></span>
-                <h2 class="cs-title">プロジェクト</h2>
+                <span class="cs-topper">プロジェクト</span>
+                <h2 class="cs-title">PROJECTS</h2>
                 <div class="cs-image-group">
                     <div class="cs-row cs-row-1">
                         <!-- Row 1-->

@@ -309,11 +309,14 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
-    font-size: 1.1875rem;
+    font-size: 1rem;
     text-align: center;
     display: inline-block;
     position: relative;
     font-weight: bold;
+  }
+  #navigation #navbar-menu ul li a span {
+    font-size: 1.25rem;
   }
   #navigation #navbar-menu ul li a.active:before {
     content: '';
@@ -329,9 +332,10 @@
     z-index: -1;
   }
   #navigation #navbar-menu.open {
-    height: 22.25rem;
+    height: 28.125rem;
     padding-top: 1.25rem;
     z-index: -100;
+    opacity: 0.9;
   }
   #navigation #navbar-menu.open ul li {
     opacity: 1;
@@ -400,7 +404,7 @@
   }
   #navigation .logo {
     margin-right: auto;
-    height: 3.75rem;
+    height: 2.8125rem;
     width: auto;
   }
   #navigation .logo img {
@@ -415,19 +419,25 @@
   }
   #navigation #navbar-menu ul li {
     list-style: none;
-    margin-left: 1.875rem;
+    margin-left: 1.5625rem;
     padding-top: 0.1875rem;
+    text-align: center;
   }
   #navigation #navbar-menu ul li a {
     text-decoration: none;
     font-weight: bold;
     /* 14px - 18px */
-    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    font-size: 0.75rem;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
     color: #fff;
     transition: color .3s;
+    display: flex;
+    flex-direction: column;
+  }
+  #navigation #navbar-menu ul li a span {
+    font-size: 1rem;
   }
   #navigation #navbar-menu ul li a:before {
     content: '';
@@ -465,9 +475,6 @@
     display: none;
   }
 }
-/*-- -------------------------- -->
-<---   Interior Page Header     -->
-<--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #int-banner {
@@ -478,7 +485,7 @@
     position: relative;
     z-index: 1;
     min-height: 30vh;
-    padding-top: 3.125rem;
+    padding-top: 3.125em;
   }
   #int-banner:before {
     content: '';
@@ -510,21 +517,21 @@
   }
   #int-banner h1 {
     color: #fff;
-    font-size: 2.13333333rem;
+    font-size: 2.13333333em;
     text-align: center;
     margin: 0 auto;
     position: relative;
     width: 96%;
-    max-width: 31.25rem;
-    margin-top: 4.375rem;
-    margin-bottom: 1.875rem;
+    max-width: 7.8125em;
+    margin-top: 1.09375em;
+    margin-bottom: 0.46875em;
   }
   #int-banner p {
     color: #fff;
     text-align: center;
-    max-width: 25rem;
+    max-width: 22.22222222em;
     margin: auto;
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.66666667em;
     display: block;
     width: 96%;
   }
@@ -532,19 +539,19 @@
 /* Tablet */
 @media only screen and (min-width: 48em) {
   #int-banner {
-    font-size: 100%;
+    font-size: 16px;
   }
   #int-banner h1 {
-    font-size: 4rem;
+    font-size: 4em;
   }
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #int-banner {
-    min-height: 18.75rem;
+    min-height: 18.75em;
     height: auto;
-    padding-top: 11.25rem;
-    padding-block-end: 6.25rem;
+    padding-top: 11.25em;
+    padding-block-end: 6.25em;
     background-attachment: fixed;
     font-size: inherit;
   }
