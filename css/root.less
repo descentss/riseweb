@@ -102,7 +102,7 @@
     // Buttons
     .button-solid {
         font-size: 16/16rem;
-        font-weight: bold;
+        font-weight: 500;
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
@@ -110,8 +110,9 @@
         line-height: 50/16em;
         height: 50/16rem;
         text-align: center;
-        padding: 0 30/16rem;
+        padding: 0 40/16rem;
         position: relative;
+        border-radius: 10px;
         z-index: 1;
         background-color: #0064b1;
 
@@ -531,10 +532,11 @@
                         text-decoration: none;
                         font-weight: bold;
                         /* 14px - 18px */
-                        font-size: 12/16rem;
+                        font-size: 10/16rem;
                         text-transform: uppercase;
                         position: relative;
                         z-index: 1;
+                        text-shadow: 0 5px 25px rgba(0,0,0,0.1);
 
                         // Transiiton Properties
                         color: #fff;
@@ -544,7 +546,7 @@
                         flex-direction: column;
 
                         span {
-                            font-size: 12/12rem;
+                            font-size: 10/10rem;
                         }
     
 
@@ -588,7 +590,7 @@
                                 z-index: -1;
 
                                 // Transition Properties
-                                transition: bottom .3s;
+                                transition: ease .3s;
                             }
                         }
                     }

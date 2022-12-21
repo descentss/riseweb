@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/critical.css"> <!-- Only above the fold css-->
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!--Defer loading the whole page css-->
     <link rel="stylesheet" href="css/local.css" media="print" onload="this.media='all'; this.onload=null;">
     <!--If the user has javascript disbaled, load this stylesheet-->
@@ -73,22 +74,45 @@
         <!--==============================================-->
         <!--                 LANDING                      -->
         <!--==============================================-->
-
-        <section id="banner">
-            <div class="banner-content">
-                <div class="bannerText">
-                    <!-- can also use <br> instead of display:block -->
-                    <h1 id="home-h">未来を見据える構造設計を<span style="display: block;">Designing One Step Ahead</span></h1>
-                    <a href="#" class="button-solid" target="_blank" rel="noopener">
-                        詳しく見る
-                    </a>
+        <section class="home">
+            <div class="swiper bg-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="image-1" src="img/backgrounds/pexel2resize.jpg" alt="">
+                        <div class="text-content">
+                            <h2 class="title">RISE <span>Structural Design Inc.</span></h2>
+                            <p class="motto">Designing One Step Ahead</p>
+                            <p class="philosophy">We, as Structural Designers, will continue to support social security
+                                and safety through the pursuit of higher level expertise and technical capabilities.</p>
+                            <button class="button-solid">Read More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="image-1" src="img/backgrounds/pexel4resize.jpg" alt="">
+                        <div class="text-content">
+                            <h2 class="title">RISE <span>Structural Design Inc.</span></h2>
+                            <p class="motto">Designing One Step Ahead</p>
+                            <p class="philosophy">We, as Structural Designers, will continue to support social security
+                                and safety through the pursuit of higher level expertise and technical capabilities.</p>
+                            <button class="button-solid">Read More<i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <picture>
-                <img aria-hidden="true" decoding="async" src="img/backgrounds/pexel4resize.jpg" alt="powerplant"
-                    width="275" height="132">
-            </picture>
+
+            </div>
+            <div class="bg-slider-thumbs">
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
+
 
 
         <!-- ============================================ -->
@@ -162,13 +186,13 @@
                     <span class="cs-topper">企業理念</span>
                     <h2 class="title">Corporate Philosophy</h2>
                     <p class="cs-text">
-                        私たちは構造設計を通じて
+                        <!-- 私たちは構造設計を通じて -->
                     </p>
                     <p class="cs-text">
-                        より高次の専門性と技術力を追求し
+                        <!-- より高次の専門性と技術力を追求し -->
                     </p>
                     <p class="cs-text">
-                        社会の安心と安全を支え続けます
+                        <!-- 社会の安心と安全を支え続けます -->
                     </p>
                     <div class="cs-flex-group">
                         <p class="cs-flex-p">
@@ -197,6 +221,13 @@
         <!--             PROJECTS CAROUSEL                -->
         <!-- ============================================ -->
 
+        <div class="slide-container">
+            <span class="slider-span" id="slider-span1"></span>
+        </div>
+
+
+
+
         <div class="slider">
             <div class="slides">
                 <!-- radio buttons start -->
@@ -222,9 +253,6 @@
 
             </div>
         </div>
-
-
-
 
         <!-- ============================================ -->
         <!--          RECRUIT CONTAINER                   -->
@@ -413,6 +441,8 @@
     // -->
     <!-- Load the polyfill first. -->
     <!-- Load the polyfill first. -->
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/swiper.js"></script>
     <script defer src="lib/main.js"></script>
 
 </body>

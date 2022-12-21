@@ -1,20 +1,13 @@
-
 /*-- -------------------------- -->
-<---          Landing           -->
+<---          Home              -->
 <--- -------------------------- -*/
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
+    .home {
+        min-height: 100vh;
 
-    #banner {
-        font-size: inherit;
-        padding-bottom: 270/16em;
-        padding-top: 150/16em;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-
-        &:before {
+        &::before {
             content: '';
             position: absolute;
             display: block;
@@ -27,153 +20,116 @@
             z-index: -10;
         }
 
-        picture {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            z-index: -11;
-            top: 50%;
-            left:50%;
-            transform: translate(-50%,-50%);
-            object-fit: cover;
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                -webkit-animation: scale 25s;
-                        animation: scale 25s;
-            }
-
-            @-webkit-keyframes scale {
-                0% {
-                  -webkit-transform: scale(1.4);
-                       -ms-transform:scale(1.4);
-                          transform: scale(1.4);
-                }
-                100% {
-                  -webkit-transform: scale(1);
-                      -ms-transform: scale(1);
-                          transform: scale(1);
-                }
-            }
-              @keyframes scale {
-                0% {
-                  -webkit-transform: scale(1.4);
-                      -ms-transform: scale(1.4);
-                          transform: scale(1.4);
-                }
-                100% {
-                  -webkit-transform: scale(1);
-                      -ms-transform: scale(1);
-                          transform: scale(1);
-                }
-            }
-        }
-
-        .banner-content {
-            width: 96%;
-            max-width: 1144/16em;
-            margin: auto;
+        .bg-slider {
+            z-index: 777;
             position: relative;
-            z-index: 10;
-            text-align: center;
-        }
-
-        .banner-content {
-            padding: 0;
-        }
-
-        .bannerText {
             width: 100%;
-            margin: auto;
-            max-width: 910/16em;
-        }
+            min-height: 100vh;
 
-        h1 {
-            font-weight: bold;
-            font-size:~"min(7vw, 2.5em)";
-            color: #fff;
-            text-align: center;
-            line-height: 72/40;
-            margin: auto;
-            width: 100%;
-            max-width: 904/40em;
-            margin-bottom: 48/40em;
-            position: relative;
+            .swiper-wrapper {
+                .swiper-slide {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
 
-            span {
-                font-size: 30/40em;
+                    img {
+                        width: 100%;
+                        height: 100vh;
+                        object-fit: cover;
+                        background-position: center;
+                        background-size: cover;
+                        pointer-events: none;
+                        z-index: -10;
+                        opacity: 0.6;
+
+                    }
+
+                    .text-content {
+                        position: absolute;
+                        top: 25%;
+                        margin: 0em 48/16em;
+                        transition: 0.3s ease;
+
+                        .title {
+                            color: #fff;
+                            font-size: 48/16em;
+                            line-height: 24/48em;
+                            padding-bottom: 0em;
+                            font-weight: 700;
+                            transform: translateY(-50px);
+                            opacity: 0;
+
+                            span {
+                                font-size: 24/48em;
+                                font-weight: 300;
+                            }
+
+                        }
+
+                        .motto {
+                            color: #fff;
+                            font-size: 24/16em;
+                            margin-bottom: 8/32em;
+
+                        }
+
+                        .philosophy {
+                            color: #fff;
+                            font-size: 16/16em;
+                            max-width: 600/16em;
+                            backdrop-filter: blur(3px);
+                            padding: 20/16em;
+                            background: rgba(255, 255, 255, 0.1);
+                            border-radius: 10px;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                            border-right: 1px solid rgba(255, 255, 255, 0.1);
+                            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+                        }
+
+                        .button-solid {
+                            margin-top: 8/16em;
+                            transition: 0.3s ease;
+                        }
+
+                    }
+                }
+
+                .swiper-slide-active {
+                    .text-content {
+                        .title {
+                            transform: translateY(0);
+                            opacity: 1;
+                            transition: 1s ease;
+                            transition-delay: 0.3s;
+
+                        }
+                    }
+                }
             }
-
-            // &:before {
-            //     content: '';
-            //     position: absolute;
-            //     display: block;
-            //     height: 4/40em;
-            //     width: 300/40em;
-            //     background: #0064b1;
-            //     opacity: 1;
-            //     bottom: 50/40em;
-            //     left: 50%;
-            //     transform: translateX(-50%);
-            // }
         }
 
-        p {
-            line-height: 1.55em;
-            margin: auto;
-            margin-bottom: 18/18em;
-            color: #fff;
-            width: 100%;
-            text-align: center;
-            max-width: 617/18em;
-            opacity: 1;
-        }
-
-        .button-solid {
-            margin: auto;
-            display: inline-block;
-            width: auto;
-            color:#fff;
-        }
     }
-    
 }
 
 /* Tablet */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48em) {}
 
-    #banner {
-        padding: 200/16em 0 300/16em 0;
-        z-index: 1;
-        overflow: hidden;
-
-        .banner-content {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+    .home {
+        img {
+            opacity: 1;
         }
     }
 }
 
-/* Small Desktop */
-@media only screen and (min-width: 1300px) {
 
-    #banner {
-        padding-top: 273/16em;
-        padding-bottom: 307/16em;
-        background: url("../img/backgrounds/pexel4resize.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-}
+
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+
+
 
 /*-- -------------------------- -->
 <---          Services          -->
@@ -192,11 +148,12 @@
         width: 90%;
         max-width: 1400/16em;
         padding: 20/16em 20/16em;
-        border-top: 6/16em solid #0064b1;
-        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+        // border-top: 6/16em solid #0064b1;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
         margin-bottom: 20/16em;
 
         .headerwrapper {
+
             // text-align: center;
             span {
                 font-size: 16/16rem;
@@ -206,6 +163,7 @@
                 letter-spacing: .1em;
                 font-weight: 700;
             }
+
             h2 {
                 font-size: 32/16rem;
                 text-transform: uppercase;
@@ -221,9 +179,11 @@
             max-width: 320/16em;
             margin: auto;
             margin-bottom: 50/16em;
+
             &:last-of-type {
                 margin-bottom: 0;
             }
+
             picture {
                 // background: #0064b1;
                 // width: 88/16em;
@@ -233,7 +193,7 @@
                 align-items: center;
                 margin: auto;
                 margin-bottom: 23/16em;
-                overflow:hidden;
+                overflow: hidden;
                 border-radius: 5/16em;
                 box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
 
@@ -245,7 +205,7 @@
                 img {
                     width: 320/16em;
                     height: 180/16em;
-                    display:block;
+                    display: block;
                     cursor: pointer;
                     // padding-bottom: 8/16em;
                     // filter:invert(1);
@@ -258,9 +218,10 @@
                     transform: scale(1.5);
                 }
 
-    
+
 
             }
+
             h2 {
                 text-align: center;
                 font-size: 16/16em;
@@ -268,11 +229,13 @@
                 font-weight: 700;
                 color: #1a1a1a;
                 margin-bottom: 13/18em;
+
                 span {
                     font-size: 18/18em;
                     text-transform: uppercase;
                 }
             }
+
             p {
                 text-align: justify;
                 line-height: 24/16em;
@@ -287,12 +250,13 @@
 /* Inbetween */
 @media only screen and (min-width: 768px) {
     .services {
-        font-size:~"min(1.8vw, 1em)";
+        font-size: ~"min(1.8vw, 1em)";
 
         .cardwrapper {
-            display:flex;
+            display: flex;
             align-items: flex-start;
             justify-content: space-between;
+            // flex-wrap: wrap;
             width: 98%;
 
             .card {
@@ -307,7 +271,8 @@
 @media only screen and (min-width: 1300px) {
     .services {
         padding: 50/16em 40/16em;
-        .cardwrapper {   
+
+        .cardwrapper {
             .card {
                 max-width: 250/16em;
             }
