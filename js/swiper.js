@@ -9,5 +9,7 @@ var swiper2 = new Swiper(".bg-slider", {
   thumbs: {
     swiper: swiper,
   },
-  // autoplay:5000, 
+  autoplay: {
+    delay:5000,
+  }
 });
