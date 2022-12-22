@@ -110,11 +110,13 @@
         line-height: 50/16em;
         height: 50/16rem;
         text-align: center;
-        padding: 0 40/16rem;
+        padding: 0 30/16rem;
         position: relative;
         border-radius: 10px;
         z-index: 1;
-        background-color: #0064b1;
+        background-color: #fff;
+        cursor: pointer;
+        border: #000 2px solid;
 
         // Transition Properties
         color: #000;
@@ -123,6 +125,7 @@
 
         &:hover {
             color: #fff;
+            transform: translateX(5px);
             &:before {
                 width: 100%;
             }
@@ -206,6 +209,7 @@
             display: inline-block;
             height: 30/16rem ;
             width: auto;
+            margin-left:16/16em;
 
             img {
                 width: auto;
@@ -393,7 +397,7 @@
             height: 450/16rem;
             padding-top: 20/16rem;
             z-index: -100;
-            opacity:0.9;
+            opacity:.8;
 
             ul {
                 li {
@@ -450,14 +454,6 @@
                 }
             }
         }
-
-        #dark-mode-toggle {
-            svg {
-                path {
-                    fill: #000;
-                }
-            }
-        }
     }
 
     body.dark-mode {
@@ -494,10 +490,10 @@
         }
 
         .container {
-            max-width: 1200/16rem;
+            // max-width: 1200/16rem;
             display: flex;
             // Forces all elements to the right
-            justify-content: flex-end;
+            // justify-content: flex-end;
             align-items: center;
         }
 
@@ -507,6 +503,7 @@
             margin-right: auto;
             height: 45/16rem;
             width: auto;
+            margin-left: 48/16em;
 
             img {
                 width: auto;

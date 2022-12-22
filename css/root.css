@@ -102,17 +102,20 @@
     line-height: 3.125em;
     height: 3.125rem;
     text-align: center;
-    padding: 0 2.5rem;
+    padding: 0 1.875rem;
     position: relative;
     border-radius: 10px;
     z-index: 1;
-    background-color: #0064b1;
+    background-color: #fff;
+    cursor: pointer;
+    border: #000 2px solid;
     color: #000;
     transition: color .3s;
     transition-delay: .1s;
   }
   .button-solid:hover {
     color: #fff;
+    transform: translateX(5px);
   }
   .button-solid:hover:before {
     width: 100%;
@@ -183,6 +186,7 @@
     display: inline-block;
     height: 1.875rem;
     width: auto;
+    margin-left: 1em;
   }
   #navigation .logo img {
     width: auto;
@@ -336,7 +340,7 @@
     height: 28.125rem;
     padding-top: 1.25rem;
     z-index: -100;
-    opacity: 0.9;
+    opacity: .8;
   }
   #navigation #navbar-menu.open ul li {
     opacity: 1;
@@ -370,9 +374,6 @@
   body.scroll #navigation #navbar-menu ul li a {
     color: #1a1a1a;
   }
-  body.scroll #dark-mode-toggle svg path {
-    fill: #000;
-  }
   body.dark-mode #navigation .background-color-div {
     height: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -398,15 +399,14 @@
     transition: height .3s;
   }
   #navigation .container {
-    max-width: 75rem;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
   }
   #navigation .logo {
     margin-right: auto;
     height: 2.8125rem;
     width: auto;
+    margin-left: 3em;
   }
   #navigation .logo img {
     width: auto;
