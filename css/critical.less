@@ -53,16 +53,16 @@
 
                         .title {
                             color: #fff;
-                            font-size: 48/16em;
-                            line-height: 40/48em;
+                            font-size: 56/16em;
+                            line-height: 40/56em;
                             padding-bottom: 0em;
                             font-weight: 700;
                             transform: translateY(-50px);
                             opacity: 0;
 
                             span {
-                                font-size: 24/48em;
-                                font-weight: 300;
+                                font-size: 28/56em;
+                                font-weight: 400;
                             }
 
                         }
@@ -79,19 +79,19 @@
                         // Original transform and opacity states //
                         .motto {
                             color: #fff;
-                            font-size: 16/16em;
-                            margin-bottom: 8/32em;
+                            font-size: 20/16em;
+                            margin-bottom: 6/16em;
 
                         }
                         
                         .philosophy {
                             color: #fff;
-                            font-size: 16/16em;
-                            max-width: 300/16em;
+                            font-size: 20/16em;
+                            max-width: 300/20em;
                             backdrop-filter: blur(3px);
-                            padding: 20/16em;
+                            padding: 20/20em;
                             background: rgba(255, 255, 255, 0.15);
-                            border-radius: 10px;
+                            border-radius: 10/20em;
                             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
                             border-right: 1px solid rgba(255, 255, 255, 0.1);
                             box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
@@ -185,6 +185,12 @@
                 .swiper-slide {
                     .text-content {
                         margin: 0em 98/16em;
+                        .motto {
+                            margin-bottom: 16/16em;
+                        }
+                        .philosophy {
+                            max-width: 600/16em;
+                        }
                     }
                 }
             }
@@ -223,48 +229,50 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
+    .headerwrapper {
+        margin: auto;
+        margin-top: 32/16em;
+        text-align: center;
+        span {
+            font-size: 16/16rem;
+            color: #0064b1;
+            line-height: 1.2em;
+            text-align: left;
+            letter-spacing: .1em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 32/16rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: #1a1a1a;
+        }
+    }
 
     .services {
         border-radius: 5/16em;
         margin: auto;
-        margin-top: 32/16em;
+        margin-top: 8/16em;
+
         // position: relative;
         z-index: 100;
         background: #fff;
         width: 90%;
         max-width: 1400/16em;
-        padding: 20/16em 20/16em;
+        padding: 0/16em 20/16em;
         // border-top: 6/16em solid #0064b1;
-        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
         margin-bottom: 20/16em;
-
-        .headerwrapper {
-
-            // text-align: center;
-            span {
-                font-size: 16/16rem;
-                color: #0064b1;
-                line-height: 1.2em;
-                text-align: left;
-                letter-spacing: .1em;
-                font-weight: 700;
-            }
-
-            h2 {
-                font-size: 32/16rem;
-                text-transform: uppercase;
-                font-weight: 900;
-                color: #1a1a1a;
-                margin-bottom: 8/16em;
-            }
-        }
 
         .card {
             display: block;
             width: 100%;
-            max-width: 320/16em;
+            max-width: 280/16em;
             margin: auto;
             margin-bottom: 50/16em;
+            padding: 16/16em 16/16em;
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 5/16em;
 
             &:last-of-type {
                 margin-bottom: 0;
@@ -289,7 +297,7 @@
                 }
 
                 img {
-                    width: 320/16em;
+                    width: 280/16em;
                     height: 180/16em;
                     display: block;
                     cursor: pointer;
@@ -310,14 +318,14 @@
 
             h2 {
                 text-align: center;
-                font-size: 16/16em;
+                font-size: 18/16em;
                 line-height: 22/18em;
                 font-weight: 700;
                 color: #1a1a1a;
                 margin-bottom: 13/18em;
 
                 span {
-                    font-size: 18/18em;
+                    font-size: 22/18em;
                     text-transform: uppercase;
                 }
             }
@@ -325,9 +333,15 @@
             p {
                 text-align: justify;
                 line-height: 24/16em;
-                font-size: 12/16em;
-                width: 100%;
+                font-size: 14/16em;
+                width: 80%;
                 opacity: .7;
+                margin-bottom: 16/16em;
+            }
+            .button-solid {
+                display:block;
+                text-align: center;
+                margin: auto;
             }
         }
     }
@@ -340,14 +354,28 @@
 
         .cardwrapper {
             display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            // flex-wrap: wrap;
+            // align-items: center;
+            justify-content: center;
             width: 98%;
+            flex-wrap: wrap;
 
             .card {
                 margin: 0;
-                max-width: 200/16em;
+                max-width: 300/16em;
+                margin-top: 60/16em;
+                margin-left: 35/16em;
+                margin-right: 35/16em;
+
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                height:500/16em;
+                p {
+                    flex:1;
+                }
+                .button-solid {
+                    align-self: flex-end;
+                }
             }
         }
     }
@@ -356,11 +384,16 @@
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
     .services {
-        padding: 50/16em 40/16em;
+        // padding: 50/16em 40/16em;
 
         .cardwrapper {
+            flex-wrap: nowrap;
             .card {
-                max-width: 250/16em;
+                max-width: 300/16em;
+                margin-top: 0;
+                margin-left: 8/16em;
+                margin-right: 8/16em;
+
             }
         }
     }

@@ -90,6 +90,7 @@
             position: relative;
             display: block;
             margin:30/16em;
+            overflow: hidden;
             img {
                 position: absolute;
                 top: 0;
@@ -101,17 +102,38 @@
                 border-radius: 5/16em;
 
             }
+            h3 {
+                position: absolute;
+                color:#fff;
+                width:100%;
+                height:100%;
+                top:0;
+                left:0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.7);
+                transform: translateX(-100%);
+                transition: transform 0.3s;
+                opacity: 0;
+
+            }
+            &:hover .caption {
+                transform: translateX(0%);
+                opacity: 1;
+            }
         }
 
         .cs-row-1 {
             .cs-picture-1 {
-                width: 420/16em;
-                height: 567/16em;
+                width: 600/16em;
+                height: 520/16em;
             }
 
             .cs-picture-2 {
-                width: 420/16em;
-                height: 629/16em;
+                width: 600/16em;
+                height: 420/16em;
             }
 
             .cs-picture-3 {
@@ -122,13 +144,13 @@
 
         .cs-row-2 {
             .cs-picture-1 {
-                width: 420/16em;
-                height: 492/16em;
+                width: 600/16em;
+                height: 420/16em;
             }
 
             .cs-picture-2 {
-                width: 420/16em;
-                height: 517/16em;
+                width: 600/16em;
+                height: 520/16em;
             }
 
             .cs-picture-3 {
